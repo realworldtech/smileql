@@ -6,10 +6,7 @@ with open("README.md", "r") as fh:
 setup(
     name="Inomial Smile GraphQL Interface",
     version="1.0.2",
-    classifiers=[
-        "Intended Audience :: Inomial Customers",
-        "Programming Language :: Python :: 3.7",
-    ],
+    classifiers=["Programming Language :: Python :: 3.7"],
     packages=["smileql"],
     install_requires=["requests", "gql", "zeep"],
     url="https://oss.rwts.com.au",
