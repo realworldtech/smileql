@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="Inomial Smile GraphQL Interface",
-    version="1.0.2",
+    version="1.0.3",
     classifiers=["Programming Language :: Python :: 3.7"],
     packages=["smileql"],
     install_requires=["requests", "gql", "zeep"],
