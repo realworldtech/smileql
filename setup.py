@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="Inomial Smile GraphQL Interface",
-    version="0.3",
+    version="1.0.0",
     classifiers=[
         "Intended Audience :: Inomial Customers",
         "Programming Language :: Python :: 3.7",
