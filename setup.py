@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="Inomial Smile GraphQL Interface",
+    name="smileql",
     version="1.0.4",
     classifiers=["Programming Language :: Python :: 3.7"],
     packages=["smileql"],
