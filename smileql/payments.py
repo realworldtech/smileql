@@ -71,7 +71,7 @@ class Payments:
         )
 
 
-        def paymentRecord(self, accountUuid str, amount int, paymentType int, name str, effective int, paymentUuid str, txUuid str):
+        def paymentRecord(self, accountUuid: str, amount: int, paymentType: int, name: str, effective: int, paymentUuid: str, txUuid: str):
             """
             Records a payment mutation for an effective unix timestamp
             """
