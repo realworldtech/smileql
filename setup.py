@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="smileql",
-    version="1.0.7",
+    version="1.0.8",
     classifiers=["Programming Language :: Python :: 3.7"],
     packages=["smileql"],
     install_requires=["requests", "gql", "zeep"],
