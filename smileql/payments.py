@@ -71,38 +71,38 @@ class Payments:
             },
         )
 
-        def paymentRecord(
-            self,
-            accountUuid: str,
-            amount: int,
-            paymentType: int,
-            name: str,
-            effective: int,
-            paymentUuid: str,
-            txUuid: str,
-        ):
-            """
+    def paymentRecord(
+        self,
+        accountUuid: str,
+        amount: int,
+        paymentType: int,
+        name: str,
+        effective: int,
+        paymentUuid: str,
+        txUuid: str,
+    ):
+        """
             Records a payment mutation for an effective unix timestamp
             """
-            mutation = gql(
-                """
+        mutation = gql(
+            """
                 mutation ($payment: PaymentRecordInput!) {
                     paymentRecord(paymentRecord: $payment)
                 }
             """
-            )
+        )
 
-            return self._transport.client.execute(
-                mutation,
-                variable_values={
-                    "payment": {
-                        "accountUuid": accountUuid,
-                        "amount": amount,
-                        "paymentType": paymentType,
-                        "name": name,
-                        "effective": effective,
-                        "paymentUuid": paymentUuid,
-                        "txUuid": txUuid,
-                    }
-                },
-            )
+        return self._transport.client.execute(
+            mutation,
+            variable_values={
+                "payment": {
+                    "accountUuid": accountUuid,
+                    "amount": amount,
+                    "paymentType": paymentType,
+                    "name": name,
+                    "effective": effective,
+                    "paymentUuid": paymentUuid,
+                    "txUuid": txUuid,
+                }
+            },
+        )
